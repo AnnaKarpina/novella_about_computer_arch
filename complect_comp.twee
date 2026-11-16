@@ -1,0 +1,687 @@
+:: StoryTitle
+Новая новелла, новое 1
+
+
+:: StoryData
+{
+  "ifid": "ff1564ec-3a16-4ca0-9b02-8898bfdc8fb0",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Название",
+  "tag-colors": {
+    "body": "green",
+    "stylesheet": "red",
+    "my-tg1": "green"
+  },
+  "zoom": 0.6
+}
+
+
+:: \ блок.питания_инфо_ср [my-tg1] {"position":"1400,1400","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->средняя.данные]]
+</div>
+
+
+:: \ блок.питания_средняя.цена [my-tg1] {"position":"1400,1500","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->средняя.данные]]
+</div>
+
+
+:: \ видеокарта_инфо_ср [my-tg1] {"position":"1100,1400","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->средняя.данные]]
+</div>
+
+
+:: \ видеокарта_средняя.цена [my-tg1] {"position":"1100,1500","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->средняя.данные]]
+</div>
+
+
+:: \ корпус_инфо_ср [my-tg1] {"position":"1500,1400","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->средняя.данные]]
+</div>
+
+
+:: \ корпус_средняя.цена [my-tg1] {"position":"1500,1500","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->средняя.данные]]
+</div>
+
+
+:: \ мат.плата_инфо_ср [my-tg1] {"position":"1200,1400","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->средняя.данные]]
+</div>
+
+
+:: \ мат.плата_средняя.цена [my-tg1] {"position":"1200,1500","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->средняя.данные]]
+</div>
+
+
+:: \ накопитель_инфо_ср [my-tg1] {"position":"1000,1400","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->средняя.данные]]
+</div>
+
+
+:: \ накопитель_средняя.цена [my-tg1] {"position":"1000,1500","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->средняя.данные]]
+</div>
+
+
+:: \ память_инфо_ср [my-tg1] {"position":"1300,1400","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->средняя.данные]]
+</div>
+
+
+:: \ память_средняя.цена [my-tg1] {"position":"1300,1500","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->средняя.данные]]
+</div>
+
+
+:: 0 [my-tg1] {"position":"1100,275","size":"100,100"}
+<div class="dialog-modern1">
+Вот и ты, уставшая от старого ноутбука, решаешь собрать новый компьютер. 
+На столе — три коробки с комплектующими, но бюджет позволяет только одну.
+[[далее|1]]
+</div>
+
+
+:: 1 [my-tg1] {"position":"1250,400","size":"100,100"}
+<img src="https://raw.githubusercontent.com/AnnaKarpina/save_img/main/modelka1.png" class="character1">
+
+
+<div class="dialog-modern-gradient">
+«Так, что тут у нас… Бюджет, середина и для богатых. 
+Надо выбрать что-то одно.»
+[[далее|Start]]
+</div>
+
+
+:: Start [my-tg1] {"position":"1125,550","size":"100,100"}
+<div class="dialog-modern1">
+**Какую сборку ты выберешь?**
+
+[[Недорогая сборка — «Чтобы работало»->Недорогая]]
+[[Средняя сборка — «Баланс»->Средняя]]
+[[Дорогая сборка — «Без компромиссов»->Дорогая]]
+</div>
+
+
+:: Дорогая [my-tg1] {"position":"1425,600","size":"100,100"}
+<div class="dialog-modern1">
+Ты открываешь третью коробку — самую тяжёлую. 
+[[далее->дорогая.фраза1]]
+</div>
+
+
+:: Название [my-tg1] {"position":"925,300","size":"100,100"}
+<div class="dialog-first"><p>Новелла "Сборка компьютера"
+Карпинна Анна, ИС1-25
+[[начать->0]]</p>
+</div>
+
+
+
+
+:: Накопитель_низкая.цена {"position":"125,875","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->низкая.данные]]
+</div>
+
+
+:: Недорогая [my-tg1] {"position":"875,525","size":"100,100"}
+<div class="dialog-modern1">
+Ты открываешь коробку с надписью **«Недорогая»**. 
+[[далее->низкая.фраза1]]
+</div>
+
+
+:: Средняя [my-tg1] {"position":"1200,700","size":"100,100"}
+<div class="dialog-modern1">
+Ты достаёшь комплектующие из средней коробки.
+[[далее->средняя.фраза]]
+</div>
+
+
+:: блок.питания_низкая.инфо {"position":"225,975","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->низкая.данные]]
+</div>
+
+
+:: блок.питанния_низкая.цена {"position":"125,975","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->низкая.данные]]
+</div>
+
+
+:: блок_дорогая_инфо [my-tg1] {"position":"2125,875","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->дорогая.данные]]
+</div>
+
+
+:: блок_дорогая_цена [my-tg1] {"position":"2225,875","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->дорогая.данные]]
+</div>
+
+
+:: видео_дорогая_инфо [my-tg1] {"position":"2125,1075","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->дорогая.данные]]
+</div>
+
+
+:: видео_дорогая_цена [my-tg1] {"position":"2225,1075","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->дорогая.данные]]
+</div>
+
+
+:: дорогая.данные [my-tg1] {"position":"1825,675","size":"100,100"}
+<div class="dialog-modern1">
+**Процессор:** AMD Ryzen 5 5600G (6 ядер, 12 потоков, Vega 7) — ~14 990 ₽ [[Для чего? ->процессор_дорогая_инфо]] [[Где купить? ->процессор_дорогая_цена]]
+**Материнская плата:** ASUS PRIME B550M-A WIFI II — ~13 150 ₽ [[Для чего? ->мат.плата_дорогая_инфо]] [[Где купить? ->мат.плата_дорогая_цена]]
+**Память:** 32 ГБ DDR4-3200 (2×16) — ~28 000 ₽ [[Для чего? ->память_дорогая_инфо]] [[Где купить? ->память_дорогая_цена]]
+**Видеокарта:** NVIDIA GeForce RTX 5060 8 ГБ (старшая модель) — ~63 350 ₽ [[Для чего? ->видео_дорогая_инфо]] [[Где купить? ->видео_дорогая_цена]]
+**Накопитель:** SSD NVMe 1 ТБ Netac NV7000Q — ~17 760 ₽ [[Для чего? ->накоп_дорогая_инфо]] [[Где купить? ->накоп_дорогая_цена]]
+**Блок питания:** 650 Вт Seasonic PRIME ULTRA GOLD — ~11 440 ₽ [[Для чего? ->блок_дорогая_инфо]] [[Где купить? ->блок_дорогая_цена]]
+**Корпус:** Thermaltake Arcus 290 TG ARGB — ~12 600 ₽ [[Для чего? ->корпус_дорогая_инфо]] [[Где купить? ->корпус_дорогая_цена]]
+[[далее->дорогая.фраза2]]
+</div>
+
+
+:: дорогая.итог [my-tg1] {"position":"1425,750","size":"100,100"}
+<div class="dialog-first">
+**Итог:** ~150 000 ₽. Максимальная конфигурация под РЭД ОС.
+[[Вернуться к выбору->Start]]
+</div>
+
+
+:: дорогая.фраза1 [my-tg1] {"position":"1600,600","size":"100,100"}
+<img src="https://raw.githubusercontent.com/AnnaKarpina/save_img/main/modelka2.png" class="character1">
+
+<div class="dialog-modern-gradient">
+Импортозамещение — это не про слабое железо. 
+Это про контроль. И про мощность.
+[[далее->дорогая.данные]]
+</div>
+
+
+:: дорогая.фраза2 [my-tg1] {"position":"1600,750","size":"100,100"}
+<img src="https://raw.githubusercontent.com/AnnaKarpina/save_img/main/modelka2.png" class="character1">
+
+<div class="dialog-modern-gradient">
+Дорого — не значит бездумно. Каждый рубль — под задачу. 
+И всё под контролем.
+[[далее->дорогая.итог]]
+</div>
+
+
+
+:: корпус_дорогая_инфо [my-tg1] {"position":"2125,575","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->дорогая.данные]]
+</div>
+
+
+:: корпус_дорогая_цена [my-tg1] {"position":"2225,575","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->дорогая.данные]]
+</div>
+
+
+:: корпус_низкая.инфо {"position":"225,1075","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->низкая.данные]]
+</div>
+
+
+:: корпус_низкая.цена {"position":"125,1075","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->низкая.данные]]
+</div>
+
+
+:: мат.плата_дорогая_инфо [my-tg1] {"position":"2125,675","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->дорогая.данные]]
+</div>
+
+
+:: мат.плата_дорогая_цена [my-tg1] {"position":"2225,675","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->дорогая.данные]]
+</div>
+
+
+:: мат.плата_низкая.инфо {"position":"225,675","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->низкая.данные]]
+</div>
+
+
+:: мат.плата_низкая.цена {"position":"125,675","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->низкая.данные]]
+</div>
+
+
+:: накоп_дорогая_инфо [my-tg1] {"position":"2125,975","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->дорогая.данные]]
+</div>
+
+
+:: накоп_дорогая_цена {"position":"2225,975","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->дорогая.данные]]
+</div>
+
+
+:: накопитель_низкая.инфо {"position":"225,875","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->низкая.данные]]
+</div>
+
+
+:: низкая.данные [my-tg1] {"position":"475,825","size":"100,100"}
+<div class="dialog-modern1">
+**Процессор:** AMD Ryzen 5 5600G (6 ядер, встроенная графика Radeon Vega 7) — ~9 600 ₽  [[Для чего? ->процессор_низкая.инфо]] [[Где купить? ->процессор_низкая.цена]]
+**Материнская плата:** MSI B550M-A PRO — ~7 600 ₽[[Для чего? ->мат.плата_низкая.инфо]] [[Где купить? ->мат.плата_низкая.цена]]
+**Память:** 16 ГБ DDR4-3200 Patriot Signature — ~14 500 ₽ [[Для чего? ->память_низкая.инфо]] [[Где купить? ->память_низкая.цена]]
+**Накопитель:** SSD NVMe 1 ТБ Kingspec NX-1TB — ~14 250 ₽ [[Для чего? ->накопитель_низкая.инфо]] [[Где купить? ->Накопитель_низкая.цена]]  
+**Блок питания:** 650 Вт PCCOOLER 80+ Bronze — ~4 310 ₽ [[Для чего? ->блок.питания_низкая.инфо]] [[Где купить? ->блок.питанния_низкая.цена]]  
+**Корпус:** ExeGate MI-207U (Micro-ATX, без БП) — ~1 820 ₽ [[Для чего? ->корпус_низкая.инфо]] [[Где купить? ->корпус_низкая.цена]]
+[[далее->низкая.фраза2]]
+</div>
+
+
+:: низкая.итог [my-tg1] {"position":"900,675","size":"100,100"}
+<div class="dialog-first">
+**Итог:** ~52 000 ₽. Для базовых задач — более чем достаточно.
+[[Вернуться к выбору->Start]]
+</div>
+
+
+
+
+
+:: низкая.фраза1 [my-tg1] {"position":"675,600","size":"100,100"}
+<img src="https://raw.githubusercontent.com/AnnaKarpina/save_img/main/modelka2.png" class="character1">
+
+
+<div class="dialog-modern-gradient">
+Для офиса, учёбы и лёгких задач. Главное — чтобы работало.
+[[далее->низкая.данные]]
+</div>
+
+
+:: низкая.фраза2 [my-tg1] {"position":"750,750","size":"100,100"}
+<img src="https://raw.githubusercontent.com/AnnaKarpina/save_img/main/modelka2.png" class="character1">
+
+<div class="dialog-modern-gradient">
+Минимальные требования РЭД ОС — 2 ГБ ОЗУ и 20 ГБ диска. 
+А у меня 16 гб и терабайт. Работать будет.
+[[далее->низкая.итог]]
+</div>
+
+
+:: память_дорогая_инфо [my-tg1] {"position":"2125,775","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->дорогая.данные]]
+</div>
+
+
+:: память_дорогая_цена [my-tg1] {"position":"2225,775","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->дорогая.данные]]
+</div>
+
+
+:: память_низкая.инфо {"position":"225,775","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->низкая.данные]]
+</div>
+
+
+:: память_низкая.цена {"position":"125,775","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->низкая.данные]]
+</div>
+
+
+:: процессор_дорогая_инфо [my-tg1] {"position":"2125,475","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->дорогая.данные]]
+</div>
+
+
+:: процессор_дорогая_цена [my-tg1] {"position":"2225,475","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->дорогая.данные]]
+</div>
+
+
+:: процессор_инфо_ср [my-tg1] {"position":"900,1400","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->средняя.данные]]
+</div>
+
+
+:: процессор_низкая.инфо {"position":"225,575","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->низкая.данные]]
+</div>
+
+
+:: процессор_низкая.цена {"position":"125,575","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->низкая.данные]]
+</div>
+
+
+:: процессор_средняя.цена [my-tg1] {"position":"900,1500","size":"100,100"}
+<div class="dialog-modern1">
+[[Вернуться к ценам->средняя.данные]]
+</div>
+
+
+:: средняя.данные [my-tg1] {"position":"1200,1000","size":"100,100"}
+<div class="dialog-modern1">
+**Процессор:**  AMD Ryzen 5 5500 (6 ядер, 12 потоков) — ~9 950 ₽ [[Для чего? ->процессор_инфо_ср]] [[Где купить? ->процессор_средняя.цена]]
+**Материнская плата:**   Gigabyte B550M K — ~7 760 ₽ [[Для чего? -> мат.плата_инфо_ср]] [[Где купить? -> мат.плата_средняя.цена]]
+**Память:**  32 ГБ DDR4-3200 (2×16) — ~28 000 ₽ [[Для чего? -> память_инфо_ср]] [[Где купить? -> память_средняя.цена]] 
+**Видеокарта:** NVIDIA GeForce RTX 5060 8 ГБ — ~58 000 ₽ [[Для чего? -> видеокарта_инфо_ср]] [[Где купить? -> видеокарта_средняя.цена]]  
+**Накопитель:**  SSD NVMe 1 ТБ Netac NV7000Q — ~17 760 ₽ [[Для чего? -> накопитель_инфо_ср]] [[Где купить? -> накопитель_средняя.цена]]
+**Блок питания:** 650 Вт Cooler Master MasterWatt 650 — ~5 670 ₽ [[Для чего? -> блок.питания_инфо_ср]] [[Где купить? -> блок.питания_средняя.цена]]
+**Корпус:** SAMA V62S (Micro-ATX, ARGB) — ~7 900 ₽ [[Для чего? -> корпус_инфо_ср]] [[Где купить? -> корпус_средняя.цена]]
+[[далее->средняя.итог]]
+</div>
+
+
+:: средняя.итог [my-tg1] {"position":"1000,1000","size":"100,100"}
+<div class="dialog-first">
+**Итог:** ~135 000 ₽. Баланс цены и производительности.
+[[Вернуться к выбору->Start]]
+</div>
+
+
+:: средняя.фраза [my-tg1] {"position":"1100,850","size":"100,100"}
+<img src="https://raw.githubusercontent.com/AnnaKarpina/save_img/main/modelka2.png" class="character1">
+
+<div class="dialog-modern-gradient">
+Средний сегмент — золотая середина. И для работы, и для игр.
+[[далее->средняя.данные]]
+</div>
+
+
+:: StoryStylesheet [stylesheet]
+/* =========================================
+   1. БАЗОВЫЕ НАСТРОЙКИ И ФОН
+   ========================================= */
+tw-story[tags~="my-tg1"] {
+    background-image: url("https://raw.githubusercontent.com/AnnaKarpina/save_img/main/2_novell_fon.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   2. ПЕРСОНАЖИ
+   ========================================= */
+.character1 {
+    position: fixed;
+    bottom: 0vh;
+    right: 5%;
+    height: 95vh; /* было 85vh */
+    z-index: 5;
+    pointer-events: none; 
+    
+    animation: characterAppear 0.8s ease-out 1 both;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   3. ДИАЛОГОВЫЕ ОКНА
+   ========================================= */
+/*_______________ Стили диалоговых окон____________________________*/
+/* _____________ ВАРИАНТ 1: Начальный пасаж _______ */
+.dialog-first {
+  padding: 12px 16px 10px;
+  font-size: 15px;
+  background: rgba(45, 38, 35, 0.92); 
+  border: 1px solid #4a3e38;
+  outline: 1px solid rgba(255, 255, 255, 0.05);
+  outline-offset: -5px; 
+  padding: 30px;
+  border-radius: 4px;
+  
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+    
+  position: fixed;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+  
+  width: clamp(320px, 90vw, 620px);
+  max-height: 90vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+  
+  color: #d6cdc5;
+  font-family: "Courier New", Courier, monospace;
+  padding: 20px 24px 18px;
+  font-size: 25px;
+}
+
+/* Вместо полоски — эффект старой закладки */
+.dialog-first::after {
+  content: "";
+  position: absolute;
+  top: -2px; left: 30px;
+  width: 15px;
+  height: 35px;
+  background: #8c3e3e; /* Тёмно-красная лента */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  transform: rotate(2deg);
+}
+
+
+
+
+
+/* ---------- ВАРИАНТ 2: рассказчик---------- */
+.dialog-modern1 {
+  position: fixed;
+  top: auto !important;       
+  bottom: 5% !important;      
+  left: 50% !important;
+  transform: translateX(-50%); 
+  z-index: 1000;
+  
+  border: none;
+  background: rgba(13, 13, 18, 0.95);
+  padding: 24px 28px 22px; /* было 18px 20px 16px */
+  border-radius: 8px;
+  margin: 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  
+  width: clamp(1250px, 92vw, 1300px); /* было clamp(1150px, 90vw, 1150px) */
+  min-height: 220px; /* добавлено для увеличения высоты окна */
+  box-sizing: border-box;
+}
+
+.dialog-modern1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4a9eff, #00f0ff, #7a5cff);
+}
+
+
+
+
+
+
+/* ---------- ВАРИАНТ 3: Эксперементы ---------- */
+.dialog-modern-gradient {
+  border: none;
+  background: rgba(13, 13, 18, 0.95);
+  
+  padding: 55px 75px 30px 36px; /* было 45px 60px 24px 30px */
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  
+  overflow: visible; 
+
+  position: fixed;
+  top: auto !important;
+  bottom: 5% !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+  margin: 0;
+  z-index: 1000;
+  
+  width: clamp(1250px, 92vw, 1300px); /* было clamp(1150px, 90vw, 1150px) */
+  min-height: 230px; /* было 180px */
+  box-sizing: border-box;
+  
+  font-size: clamp(18px, 1.5vw, 22px); 
+  line-height: 1.6;
+  color: #e0e0e0; 
+}
+
+/* Верхняя градиентная полоска */
+.dialog-modern-gradient::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4a9eff, #00f0ff, #7a5cff);
+  border-radius: 8px 8px 0 0; /* Скругляем полоску, раз убрали overflow: hidden */
+}
+
+.dialog-modern-gradient::before {
+  content: "ТЫ";
+  position: absolute;
+  top: 12px;
+  left: 24px; 
+  background: linear-gradient(90deg, #4a9eff, #00f0ff);
+  color: #fff;
+  font-size: 20px;      
+  padding: 6px 18px;    
+  font-weight: bold;
+  border-radius: 6px;
+  letter-spacing: 1.5px;
+  z-index: 1;
+  box-shadow: 0 4px 10px rgba(0, 240, 255, 0.3);
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   4. ССЫЛКИ И ВЫБОРЫ (Кнопки)
+   ========================================= */
+tw-link, a, .enchantment-link {
+  color: #4a9eff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  cursor: pointer;
+}
+
+tw-link:hover, a:hover, .enchantment-link:hover {
+  color: #00f0ff;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.8);
+  transform: translateY(-2px); 
+}
+
+.dialog-modern-gradient tw-link::before,
+.dialog-modern1 tw-link::before {
+  content: "► "; 
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   5. АНИМАЦИИ (KEYFRAMES)
+   ========================================= 
+@keyframes fadeInCenter {
+  from { opacity: 0; transform: translate(-50%, -50%) scale(0.95); }
+  to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+
+@keyframes slideUpFade {
+  from { opacity: 0; transform: translate(-50%, 30px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+@keyframes characterAppear {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+*/
