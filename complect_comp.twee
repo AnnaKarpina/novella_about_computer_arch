@@ -1,5 +1,5 @@
 :: StoryTitle
-0 1 1
+Вторая новелла
 
 
 :: StoryData
@@ -11,7 +11,8 @@
   "tag-colors": {
     "body": "green",
     "stylesheet": "red",
-    "my-tg1": "green"
+    "my-tg1": "green",
+    "my-m": "blue"
   },
   "zoom": 0.6
 }
@@ -75,6 +76,15 @@ SSD (твердотельный) — электронный, очень быст
 </div>
 
 
+:: 0 [my-tg1] {"position":"225,300","size":"100,100"}
+<div class=dialog-advise>
+https://raw.githubusercontent.com/AnnaKarpina/novella_about_computer_arch/main/poslednyaya-glava-2-6835cb.mp3
+</div>
+
+<a href="https://poisk.im/p/6518641320699726236" target="_blank">Где купить?</a>
+
+
+
 :: Start [my-tg1] {"position":"1175,625","size":"100,100"}
 <div class="dialog-modern1">
 **Какую сборку ты выберешь?**
@@ -124,6 +134,7 @@ HONOR MagicBook X16 AMD (2025) — это сбалансированный и д
 Карпинна Анна, ИС1-25
 [[начать ->выбор]]</p>
 </div>
+
 
 
 :: Начало_компютер [my-tg1] {"position":"1150,350","size":"100,100"}
@@ -243,6 +254,10 @@ AZERTY Story RB-1450 — это компактный и недорогой но�
 [[Я хочу ноутбук|Начало_ноутбук]]
 </div>
 
+<div class=dialog-advise>
+Подсказка! Чтобы включить музыку - щёлкните на любое место
+</div>
+
 
 :: дорогая.данные [my-tg1] {"position":"1850,750","size":"100,100"}
 <div class="dialog-modern1">
@@ -270,7 +285,7 @@ AZERTY Story RB-1450 — это компактный и недорогой но�
 <img src="https://raw.githubusercontent.com/AnnaKarpina/save_img/main/modelka2.png" class="character1">
 
 <div class="dialog-modern-gradient">
-Лучше сыкономить нервы и время, чем деньги.
+Лучше сэкономить нервы и время, чем деньги.
 [[далее->дорогая.данные]]
 </div>
 
@@ -444,7 +459,7 @@ SSD (твердотельный) — электронный, очень быст
 **Память:**  32 ГБ DDR4-3200 (2×16) — ~28 000 ₽ [[Что это? -> память_инфо_ср]]<a href="https://poisk.im/p/8459830955526065087" target="_blank">Где купить?</a>
 **Видеокарта:** NVIDIA GeForce RTX 5060 8 ГБ — ~58 000 ₽ [[Что это? -> видеокарта_инфо_ср]]<a href="https://market.yandex.ru/search?text=RTX%205060%208%D0%93%D0%91" target="_blank">Где купить?</a> 
 **Накопитель:**  SSD NVMe 1 ТБ Netac NV7000Q — ~17 760 ₽ [[Что это? -> накопитель_инфо_ср]]<a href="https://www.citilink.ru/product/nakopitel-ssd-netac-pcie-4-0-x4-1tb-nt01nv7000q-1t0-e4x-nv7000q-m-2-22-2053440/" target="_blank">Где купить?</a>
-**Блок питания:** 650 Вт Cooler Master MasterWatt 650 — ~5 670 ₽ [[Что это? -> блок.питания_инфо_ср]]
+**Блок питания:** 650 Вт Cooler Master MasterWatt 650 — ~5 670 ₽ [[Что это? -> блок.питания_инфо_ср]]<a href="https://poisk.im/p/6518641320699726236" target="_blank">Где купить?</a>
 **Корпус:** SAMA V62S (Micro-ATX, ARGB) — ~7 900 ₽ [[Что это? -> корпус_инфо_ср]] <a href="https://market.yandex.ru/search?text=SAMA%20V62S" target="_blank">Где купить?</a>
 [[далее->средняя.итог]]
 </div>
@@ -465,6 +480,21 @@ SSD (твердотельный) — электронный, очень быст
 [[далее->средняя.данные]]
 </div>
 
+
+:: StoryScript [script]
+// Создаём глобальный аудиообъект, не привязанный к пассажу
+window.bgm = new Audio("https://raw.githubusercontent.com/AnnaKarpina/novella_about_computer_arch/main/poslednyaya-glava-2-6835cb.mp3");
+window.bgm.loop = true; // Бесконечное воспроизведение
+
+// Пытаемся воспроизвести при первом взаимодействии с пользователем
+// Примечание: этот обработчик сработает только один раз
+document.addEventListener('click', function initAudio() {
+    window.bgm.play().catch(function(err) {
+        console.warn("Не удалось воспроизвести музыку:", err);
+    });
+    // Удаляем обработчик после успешного запуска, чтобы не срабатывал повторно
+    document.removeEventListener('click', initAudio);
+}, { once: true });
 
 :: StoryStylesheet [stylesheet]
 /* =========================================
@@ -657,6 +687,53 @@ tw-story[tags~="my-tg1"] {
   z-index: 1;
   box-shadow: 0 4px 10px rgba(0, 240, 255, 0.3);
 }
+
+
+
+
+
+/* ---------- ВАРИАНТ 4: Подсказка ---------- */
+.dialog-advise {
+  padding: 12px 16px 10px;
+  font-size: 15px;
+  background: rgba(45, 38, 35, 0.92); 
+  border: 1px solid #4a3e38;
+  outline: 1px solid rgba(255, 255, 255, 0.05);
+  outline-offset: -5px; 
+  padding: 30px;
+  border-radius: 4px;
+  
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+    
+  position: fixed;
+  top: 20px !important;
+  left: 20px !important;
+  /* transform: translate(-50%, -50%);  ← УДАЛИТЬ эту строку */
+  
+  /* width можно оставить, но лучше ограничить, чтобы окно не растягивалось */
+  width: clamp(320px, 90vw, 620px);
+  max-height: 90vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+  
+  color: #d6cdc5;
+  font-family: "Courier New", Courier, monospace;
+  padding: 20px 24px 18px;
+  font-size: 25px;
+}
+
+/* Вместо полоски — эффект старой закладки */
+.dialog-advise::after {
+  content: "";
+  position: absolute;
+  top: -2px; left: 30px;
+  width: 15px;
+  height: 35px;
+  background: #8c3e3e; /* Тёмно-красная лента */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  transform: rotate(2deg);
+}
+
 
 
 
